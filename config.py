@@ -1,10 +1,11 @@
 # avtopost sozlamalari
-ADMIN = "Sardor Rahimbekov"
-TIMEZONE = "Asia/Dubai"   # postlar Dubay vaqti bilan chiqsin
+import os
+
+TIMEZONE = "Asia/Dubai"
 POST_HOURS = (9, 16)
 
-CHANNELS = ["Global Staff | Xorijda ish", "Oltin Signal | Kripto klub"]
-BOTS = ["@globalstaff_anketa_bot", "@oltinsignal_menejer_bot"]
+CHANNELS = os.environ.get("CHANNELS", "").split(",")
+BOTS = os.environ.get("BOTS", "").split(",")
 
-USDT_WALLET = "TKiKR1436rxRq61TATDjZWqJRUfiZhCef9"
-CONTACT_EMAIL = "globalstaff.hr@proton.me"
+USDT_WALLET = os.environ.get("USDT_WALLET")
+CONTACT_EMAIL = os.environ.get("CONTACT_EMAIL")
