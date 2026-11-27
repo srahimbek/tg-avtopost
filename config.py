@@ -9,3 +9,13 @@ BOTS = os.environ.get("BOTS", "").split(",")
 
 USDT_WALLET = os.environ.get("USDT_WALLET")
 CONTACT_EMAIL = os.environ.get("CONTACT_EMAIL")
+# Mijozlar (clients)
+MIJOZLAR = {
+    "kingdom": {
+        "kanal": "Kingdom Career Link | Jobs in Cambodia",
+        "bot": "@kingdomcareer_hr_bot",
+        "TIMEZONE": "Asia/Kuala_Lumpur",
+        "tolov": "@rielrate_otc_bot",
+        "aloqa": "lina.kcl",
+    },
+}
